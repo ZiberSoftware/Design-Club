@@ -1,7 +1,7 @@
 .container {
     width: 1280px;
     height: 720px;
-    background-color: #e2e2e2;
+    background-color: #E1DDDA;
     margin: 10px auto 10px auto;
 }
 
@@ -11,6 +11,7 @@
     height: 500px;
     margin: 80px 60px 0 80px; 
     overflow: hidden;
+    border: 5px solid white;
 }
 
 
@@ -106,10 +107,10 @@ animation-iteration-count: infinite;
 animation-duration: 8s;
 }
 #animate img:nth-of-type(1) {
--webkit-animation-delay: 8s;
--moz-animation-delay: 8s;
--o-animation-delay: 8s;
-animation-delay: 8s;
+-webkit-animation-delay: 6s;
+-moz-animation-delay: 6s;
+-o-animation-delay: 6s;
+animation-delay: 6s;
 }
 #animate img:nth-of-type(2) {
 -webkit-animation-delay: 4s;
@@ -117,46 +118,78 @@ animation-delay: 8s;
 -o-animation-delay: 4s;
 animation-delay: 4s;
 }
+#animate img:nth-of-type(3) {
+-webkit-animation-delay: 2s;
+-moz-animation-delay: 2s;
+-o-animation-delay: 2s;
+animation-delay: 2s;
+}
+#animate img:nth-of-type(4) {
+-webkit-animation-delay: 0;
+-moz-animation-delay: 0;
+-o-animation-delay: 0;
+animation-delay: 0;
+}
 
+.topproduct {
+    background-color: #B9DFE2;
+position: absolute;
+  width: 140px;
+  height: 140px;
+    margin: 50px 0 0 50px;
+    border-radius: 50%;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+    transform: rotate(-25deg);
+}
+
+.topproduct p {
+padding-top: 15px;
+}
 
 .title {
   position: absolute;
-  width: 500px;
+  width: 490px;
   height: 140px;
-  margin: 80px 60px 0 720px;
+  margin: 80px 60px 0 730px;
   font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #9F9492;
 }
 
 .description {
   position: absolute;
   word-wrap: break-word;
-  width: 500px;
-  height: 200px;
-  margin: 240px 60px 0 720px;
+  width: 490px;
+  height: 230px;
+  margin: 210px 60px 0 730px;
   overflow: hidden;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 25px;
+  font-size: 24px;
+        color: #9F9492;
 }
 
 .actie {
     position: absolute;
-  width: 500px;
+  width: 490px;
   height: 50px;
-  margin: 460px 60px 0 720px;
+  margin: 460px 60px 0 730px;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 10px;
+  font-size: 20px;
+  line-height: 15x;
+        color: #9F9492;
 }
 
 .price {
   position: absolute;
-  width: 500px;
+  width: 490px;
   height: 50px;
-  margin: 530px 60px 0 720px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 25px;
+  margin: 510px 60px 0 730px;
+  font-family: 'Open Sans', sans-serif, helvetica;
+  font-size: 40px;
   line-height: 0px;
+        color: #9F9492;
 }
