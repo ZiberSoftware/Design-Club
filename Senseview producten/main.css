@@ -5,13 +5,120 @@
     margin: 10px auto 10px auto;
 }
 
-.image {
+#animate {
     position: absolute;
     width: 620px;
     height: 500px;
     background-color: #dbdbdb;
     margin: 80px 60px 0 80px; 
+    overflow: hidden;
 }
+
+
+#animate img {
+position:absolute;
+left:0;
+}
+
+@-webkit-keyframes animateFadeInOut {
+0% {
+opacity:1;
+}
+17% {
+opacity:1;
+}
+25% {
+opacity:0;
+}
+92% {
+opacity:0;
+}
+100% {
+opacity:1;
+}
+}
+@-moz-keyframes animateFadeInOut {
+0% {
+opacity:1;
+}
+17% {
+opacity:1;
+}
+25% {
+opacity:0;
+}
+92% {
+opacity:0;
+}
+100% {
+opacity:1;
+}
+}
+@-o-keyframes animateFadeInOut {
+0% {
+opacity:1;
+}
+17% {
+opacity:1;
+}
+25% {
+opacity:0;
+}
+92% {
+opacity:0;
+}
+100% {
+opacity:1;
+}
+}
+@keyframes animateFadeInOut {
+0% {
+opacity:1;
+}
+17% {
+opacity:1;
+}
+25% {
+opacity:0;
+}
+92% {
+opacity:0;
+}
+100% {
+opacity:1;
+}
+}
+#animate img {
+-webkit-animation-name: animateFadeInOut;
+-webkit-animation-timing-function: ease-in-out;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-duration: 8s;
+-moz-animation-name: animateFadeInOut;
+-moz-animation-timing-function: ease-in-out;
+-moz-animation-iteration-count: infinite;
+-moz-animation-duration: 8s;
+-o-animation-name: animateFadeInOut;
+-o-animation-timing-function: ease-in-out;
+-o-animation-iteration-count: infinite;
+-o-animation-duration: 8s;
+animation-name: animateFadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 8s;
+}
+#animate img:nth-of-type(1) {
+-webkit-animation-delay: 8s;
+-moz-animation-delay: 8s;
+-o-animation-delay: 8s;
+animation-delay: 8s;
+}
+#animate img:nth-of-type(2) {
+-webkit-animation-delay: 4s;
+-moz-animation-delay: 4s;
+-o-animation-delay: 4s;
+animation-delay: 4s;
+}
+
 
 .title {
   position: absolute;
@@ -19,23 +126,32 @@
   width: 500px;
   height: 140px;
   margin: 80px 60px 0 720px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .description {
   position: absolute;
+  word-wrap: break-word;
   background-color: #a3a3a3;
   width: 500px;
   height: 200px;
   margin: 240px 60px 0 720px;
-  
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
 }
 
 .actie {
-  position: absolute;
+    position: absolute;
   background-color: #a3a3a3;
   width: 500px;
   height: 50px;
   margin: 460px 60px 0 720px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 10px;
 }
 
 .price {
@@ -44,4 +160,8 @@
   width: 500px;
   height: 50px;
   margin: 530px 60px 0 720px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 0px;
 }
