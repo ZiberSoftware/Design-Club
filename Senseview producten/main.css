@@ -143,7 +143,7 @@ position: absolute;
     font-size: 30px;
     font-weight: 200;
     text-align: center;
-    transform: rotate(-25deg);
+    -webkit-transform: rotate(-25deg);
 }
 
 .topproduct p {
@@ -176,11 +176,25 @@ padding-top: 15px;
     position: absolute;
   width: 490px;
   height: 50px;
-  margin: 460px 60px 0 730px;
+  margin: 450px 60px 0 730px;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   line-height: 15x;
         color: #9F9492;
+  display: inline-block;
+}
+
+.actieprijs {
+    position: absolute;
+  width: 490px;
+  height: 50px;
+  margin: 470px 60px 0 840px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  line-height: 15x;
+        color: #9F9492;
+  display: inline-block;
+  text-decoration: line-through;
 }
 
 .price {
